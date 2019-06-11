@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+     @font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+#container{
+    width:800px;
+    height:auto;
+    border:green solid 2px;
+    text-align:center;
+    font-family: 'Binggrae-Bold';
+}
+h3{
+}
+#text{
+    text-align:center;
+}
+    </style>
+  </head>
+  <body>
+
+  <div id = "container">
+    </html><h3>입력한 텍스트:</h3>
+{{text}}
+<h3>입력한 텍스트 총 단어의 수 : </h3>
+{{word}}
+<h3>입력한 텍스트의 총 길이 :</h3>
+{{text | length}}
+<h3>단어 카운트 : </h3>
+{% for word, count in dic%}
+    {{word}} - {{count}}
+    <br>
+{% endfor %}
+</div>
+  </body>

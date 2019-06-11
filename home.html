@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+     @font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+#container{
+    margin:auto;
+    width:800px;
+    height:auto;
+    border:2px solid green;
+    font-family: 'Binggrae-Bold';
+
+}
+a{
+    text-decoration:none;
+}
+h1{
+    text-align:center;
+}
+form{
+    margin:0 auto;
+    width:410px;
+    margin-bottom:50px;
+}
+textarea{
+    width:400px;
+}
+input[type="submit"]{
+    background-color:green;
+    color:white;
+    border:0px;
+    font-family: 'Binggrae-Bold';
+    width:400px;
+    height:50px;
+    font-size:40px;
+
+}
+
+    </style>
+  </head>
+
+  <body>
+
+  <div id = "container">
+    <h1>여기서 글자를 카운트 합니다!!</h1>
+
+<form action="{%url 'count'%}">
+    <textarea cols = "40" rows = "10" name = "fulltext"> </textarea>
+    <br>
+    <input type = "submit" values="count!">
+
+    </div>
+  </body>
+</html>
+
